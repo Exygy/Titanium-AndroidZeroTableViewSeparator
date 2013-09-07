@@ -1,0 +1,18 @@
+%define lookup-function-name lookupGeneratedInit
+%define class-name AndroidZeroTableViewSeparatorBindings
+%{
+
+#include <string.h>
+#include <v8.h>
+#include <KrollBindings.h>
+
+#include "com.exygy.androidzerotableviewseparator.ExampleProxy.h"
+#include "com.exygy.androidzerotableviewseparator.AndroidZeroTableViewSeparatorModule.h"
+
+
+%}
+struct titanium::bindings::BindEntry;
+%%
+com.exygy.androidzerotableviewseparator.ExampleProxy, ::com::exygy::androidzerotableviewseparator::androidzerotableviewseparator::ExampleProxy::bindProxy, ::com::exygy::androidzerotableviewseparator::androidzerotableviewseparator::ExampleProxy::dispose
+com.exygy.androidzerotableviewseparator.AndroidZeroTableViewSeparatorModule, ::com::exygy::androidzerotableviewseparator::AndroidZeroTableViewSeparatorModule::bindProxy, ::com::exygy::androidzerotableviewseparator::AndroidZeroTableViewSeparatorModule::dispose
+%%
