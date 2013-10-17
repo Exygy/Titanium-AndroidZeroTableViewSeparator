@@ -2,7 +2,7 @@
 
 ## Description
 
-TODO: Enter your module description here
+Hide table view separators on Android
 
 ## Accessing the android_zero_table_view_separator Module
 
@@ -14,26 +14,18 @@ The android_zero_table_view_separator variable is a reference to the Module obje
 
 ## Reference
 
-TODO: If your module has an API, you should document
-the reference here.
+	var tableView = Ti.UI.createTableView({
+		data:data,
+		backgroundColor: colors.purple,
+		separatorColor:  "transparent"
+	});
 
-### ___PROJECTNAMEASIDENTIFIER__.function
-
-TODO: This is an example of a module function.
-
-### ___PROJECTNAMEASIDENTIFIER__.property
-
-TODO: This is an example of a module property.
-
-## Usage
-
-TODO: Enter your usage example here
+	android_zero_table_view_separator.hideTableRowSepartor(tableView);
 
 ## Author
 
-TODO: Enter your author name, email and other contact
-details you want to share here. 
+Pierre Hunault - Exygy
 
 ## License
 
-TODO: Enter your license/legal information here.
+Apache License
